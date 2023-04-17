@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+
+    <div id="wrapper" class="w-[100vw] min-w-[240px] h-[100vh] flex relative flex-col items-center" >
+
+       
+
+
+
+ <!-- heading -->
+            <div id="heading" class="select-none   w-[100%] p-2 bg-slate-700 text-[20px] sm:text-[50px] uppercase text-white relative gap-2  font-serif flex justify-center items-center " >
+               
+ 
+
+                <ul id="icon" class="  select-none sm:w-[80px] w-[35px]    "  ><img src="https://cdn.onlinewebfonts.com/svg/img_573740.png" alt=""> </ul>
+
+                <h1  >Apni News</h1>
+            </div>
+
+        <div id="container" class="w-[100%] relative flex p-[3px] items-center bg-slate-200 justify-center " >
+
+           
+<!-- <ul id="icon" class=" absolute  select-none w-[35px]   "  ><img src="https://cdn.onlinewebfonts.com/svg/img_573740.png" alt=""> </ul> -->
+            <!-- nav bar -->
+
+
+
+            <div id="nav" class=" hidde   items-center flex min-w-[460px] w-[60%] h-[40px] uppercase justify-between" >
+
+
+
+                
+                <div id="home" class="hover:underline  select-none  cursor-pointer" >Home</div>
+                <div id="defence"  class="hover:underline  select-none  cursor-pointer">Defence</div>
+                <!-- <div id="world"  class=" select-none  cursor-pointer hover:underline">World</div> -->
+                <div id="country_container" class="hover:underline select-none  cursor-pointer relative" >
+                    <div id="country"  class=" flex items-center select-none  cursor-pointer gap-[5px]" >
+                        <p>country</p>  
+                        <!-- teer vala icon  -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="*" class="w-[10px] rounded-[5px] h-[10px]" >  
+                    </div>
+
+                    <div id="country_drop" class=" absolute  leading-10 bg-slate-200  border-t-4 border-slate-400 rounded-[2px]  top-[30px] w-[100px] hidden activ flex-col" >
+                        <div id="india" class="hover:bg-slate-400 pl-[7px] rounded-[5px]">India</div>
+                        <div id="usa" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >USA</div>
+                        <div id="china" class="hover:bg-slate-400 pl-[7px] rounded-[5px]">China</div>
+                        <div id="ukraine" class="hover:bg-slate-400 pl-[7px] rounded-[5px] " >Ukraine</div>
+                        <div id="russia" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >Russia</div>
+                        
+                    </div>
+
+
+
+                </div>
+              
+              <div id="sport_container" class="z-40  hover:underline select-none  cursor-pointer  relative" >
+                <div id="sports"  class="flex items-center gap-[5px]" >
+                    <p>sports</p>  
+                    <!-- teer vala icon  -->
+                    <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="*" class="w-[10px] h-[10px]" >  
+                </div>
+
+                <div id="sport_drop" class=" absolute   bg-slate-200 border-t-4 border-slate-400 rounded-[5px] leading-10  top-[30px] min-w-[130px] hidden flex-col" >
+                    <div id="cricket" class="hover:bg-slate-400 pl-[7px] rounded-[5px]">Cricket</div>
+                    <div id="volleyball" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >Volleyball</div>
+                    <div id="badminton" class="hover:bg-slate-400 pl-[7px] rounded-[5px]">Badminton</div>
+                    <div id="athletics" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >Athletics</div>
+                    
+                </div>
+
+
+
+            </div>
+
+                
+
+                <div id="state_container" class="hover:underline select-none  cursor-pointer min-w-[100px] relative" >
+                    <div id="states"  class="flex items-center gap-[5px]" >
+                        <p>states</p>  
+                        <!-- teer vala icon  -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="*" class="w-[10px] h-[10px]" >  
+                    </div>
+
+                    <div id="state_drop" class="  absolute  bg-slate-200 border-t-4 border-slate-400 min-w-[150px] rounded-[5px] leading-10 top-[30px] hidden flex-col" >
+                        <div id="delhi" class="hover:bg-slate-400 pl-[7px] rounded-[5px]">Delhi</div>
+                        <div id="up" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >UP</div>
+                        <div id="uk" class="hover:bg-slate-400 pl-[7px] rounded-[5px]">Uttrakhand</div>
+                        <div id="jk" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >J&K</div>
+                        <div id="ne" class="hover:bg-slate-400 pl-[7px] rounded-[5px]" >North East</div>
+                        
+                    </div>
+
+
+
+                </div>
+
+                
+            </div>
+
+
+          
+
+        </div>
+
+
+
+  <!-- content -->
+            <div id="content" class=" m-[20px] max-w-[700px]   p-[10px] border-[2px]  rounded   ">
+
+               
+
+
+                <!-- cards -->
+
+                <!-- card1 -->
+
+
+                <div id="cards" class=" "  >
+
+                    
+ 
+                    <div id="card1" class="mb-[50px] shadow-2xl  gap-5  flex sm:flex-row flex-col-reverse flex-wrap justify-around  ">
+
+
+                        <div class="w-[100%]  flex justify-center " >
+                        <h2 id="news_type1" class="sm:visible hidden  text-[25px]  font-serif" >India News</h2>
+                    </div>
+    
+                        <!-- text of news -->
+                        <div id="text1" class="  p-[10px] flex justify-between flex-col  w-[70%] ">
+                             <div id="headline1" class=" text-[25px]" >Lorem ipsum dolor sit amet.</div>
+
+
+                             <div id="source1" class="text-teal-600" >
+                                India news
+                             </div>
+
+                             <div id="description1" class="hidde">
+
+                                <p  id="news_des1" ></p>
+                                <a href="" class="text-teal-400" id="link1" target="_blank" >For More...Click..</a>
+
+
+                            </div>
+
+                            
+
+                       </div>
+                        <!-- image -->
+                        <div id="img1" class="  sm:w-[130px] w-[100%]  sm:h-[130px] h-[200px] sm:max-h-[130px]  mb-[10px] flex justify-center items-center  ">
+                            <img id="news_img1"  class=" w-full h-full"  >
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div id="cards"  class="" >
+
+                    <!-- card2 -->
+ 
+                    <div id="card2" class="gap-5 mb-[50px] shadow-2xl flex sm:flex-row flex-col-reverse flex-wrap justify-around  ">
+
+
+                        <div class="w-[100%]  flex justify-center " >
+                        <h2 id="news_type2" class="sm:visible hidden  text-[25px]  font-serif" >India News</h2>
+                    </div>
+    
+                        <!-- text of news -->
+                        <div id="text2" class="  p-[10px] flex justify-between flex-col  w-[70%] ">
+                             <div id="headline2" class=" text-[25px]" >Lorem ipsum dolor sit amet.</div>
+
+
+                             <div id="source2" class="text-teal-600" >
+                                India news
+                             </div>
+
+                             <div id="description2" class="hidde">
+
+                                <p  id="news_des2" ></p>
+                                <a href="" class="text-teal-400" target="_blank" id="link2" >For More...Click..</a>
+
+
+                            </div>
+
+                       </div>
+                        <!-- image -->
+                        <div id="img2" class="   sm:w-[130px] w-[100%]  sm:h-[130px] h-[200px] sm:max-h-[130px]  mb-[10px] flex justify-center items-center ">
+                            <img id="news_img2" class="h-full w-[full]" alt="">
+                        </div>
+
+                    </div>
+
+<!-- card3 -->
+
+<div id="card3" class="gap-5 mb-[50px] shadow-2xl flex sm:flex-row flex-col-reverse flex-wrap justify-around  ">
+
+
+    <div class="w-[100%]  flex justify-center " >
+    <h2 id="news_type3" class="sm:visible hidden  text-[25px]  font-serif" >India News</h2>
+</div>
+
+    <!-- text of news -->
+    <div id="text3" class="  p-[10px] flex justify-between flex-col  w-[70%] ">
+         <div id="headline3" class=" text-[25px]" >Lorem ipsum dolor sit amet.</div>
+
+
+         <div id="source3" class="text-teal-600" >
+            India news
+         </div>
+
+         <div id="description3" class="hidde">
+
+            <p  id="news_des3" ></p>
+            <a href="" class="text-teal-400" target="_blank" id="link3" >For More...Click..</a>
+
+
+        </div>
+
+   </div>
+    <!-- image -->
+    <div id="img3" class="  sm:w-[130px] w-[100%]  sm:h-[130px] h-[200px] sm:max-h-[130px]  mb-[10px] flex justify-center items-center ">
+        <img id="news_img3" class="h-full w-[full]" alt="">
+    </div>
+
+</div>
+
+<!-- card4 -->
+<div id="card4" class="gap-5 mb-[50px] shadow-2xl flex sm:flex-row flex-col-reverse flex-wrap justify-around  ">
+
+
+    <div class="w-[100%]  flex justify-center " >
+    <h2 id="news_type4" class="sm:visible hidden  text-[25px]  font-serif" >India News</h2>
+</div>
+
+    <!-- text of news -->
+    <div id="text4" class="  p-[10px] flex justify-between flex-col  w-[70%] ">
+         <div id="headline4" class=" text-[25px]" >Lorem ipsum dolor sit amet.</div>
+
+
+         <div id="source4" class="text-teal-600" >
+            India news
+         </div>
+
+         <div id="description4" class="hidde">
+
+            <p  id="news_des4" ></p>
+            <a href="" class="text-teal-400" target="_blank" id="link4" >For More...Click..</a>
+
+
+        </div>
+
+   </div>
+    <!-- image -->
+    <div id="img4" class="  sm:w-[130px] w-[100%]  sm:h-[130px] h-[200px] sm:max-h-[130px]  mb-[10px] flex justify-center items-center  ">
+        <img id="news_img4" class="h-full w-[full]" alt="">
+    </div>
+
+</div>
+
+<!-- card5 -->
+<div id="card5" class="gap-5 mb-[50px] shadow-2xl flex sm:flex-row flex-col-reverse flex-wrap justify-around  ">
+
+
+    <div class="w-[100%]  flex justify-center " >
+    <h2 id="news_type5" class="  text-[25px] sm:visible hidden  font-serif" >India News</h2>
+</div>
+
+    <!-- text of news -->
+    <div id="text5" class="  p-[10px] flex  justify-between flex-col  w-[70%] ">
+         <div id="headline5" class=" text-[25px]" >Lorem ipsum dolor sit amet.</div>
+
+
+         <div id="source5" class="text-teal-600" >
+            India news
+         </div>
+
+         <div id="description5" class="hidde">
+
+            <p  id="news_des5" ></p>
+            <a href="" class="text-teal-400" target="_blank" id="link5" >For More...Click..</a>
+
+
+        </div>
+
+   </div>
+    <!-- image -->
+    <div id="img5" class="  sm:w-[130px] w-[100%]  sm:h-[130px] h-[200px] sm:max-h-[130px]  mb-[10px] flex justify-center items-center  ">
+        <img id="news_img5" class="h-full w-full" alt="">
+    </div>
+
+</div>
+
+<!-- card6 -->
+
+
+<div id="card6" class="gap-5  shadow-2xl flex sm:flex-row flex-col-reverse  flex-wrap justify-around  ">
+
+
+    <div class="w-[100%]  flex justify-center " >
+    <h2 id="news_type6" class="  text-[25px] sm:visible hidden  font-serif" >India News</h2>
+</div>
+
+    <!-- text of news -->
+    <div id="text6" class="  p-[10px] flex justify-between flex-col  w-[70%] ">
+         <div id="headline6" class=" text-[25px]" >Lorem ipsum dolor sit amet.</div>
+
+
+         <div id="source6" class="text-teal-600" >
+            India news
+         </div>
+
+         <div id="description6" class="hidde">
+
+            <p  id="news_des6" ></p>
+            <a href="" class="text-teal-400" target="_blank" id="link6" >For More...Click..</a>
+
+
+        </div>
+
+   </div>
+    <!-- image -->
+    <div id="img6" class=" sm:w-[130px] w-[100%]  sm:h-[130px] h-[200px] sm:max-h-[130px]  mb-[10px] flex justify-center items-center  ">
+        <img id="news_img6" class="h-full w-full"  alt="">
+    </div>
+
+</div>
+
+<!-- ca-->
+
+
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+
+    <script src="script.js" ></script>
+</body>
+</html>

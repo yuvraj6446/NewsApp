@@ -1,0 +1,12 @@
+#country_drop.active ,#state_drop.active, #sport_drop.active{
+    display: flex;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    
+}
+
+#wrapper::-webkit-scrollbar {
+    display: none;
+}
