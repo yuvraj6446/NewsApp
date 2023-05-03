@@ -6,7 +6,7 @@
 
 
 // const API_KEY="09b8727fd1a34c4b9077f5a6cc4a4c52";
-const API_KEY="c7ec3bdf1fed433f8a3c13550dafd39f";
+const API_KEY="pub_20674f773e9670acd4264c1c15d8f7a149251";
 const country=document.querySelector("#country");
 const country_drop=document.querySelector("#country_drop");
 const state_drop=document.querySelector("#state_drop");
@@ -43,12 +43,12 @@ const defence=document.querySelector("#defence");
 let CATEGORY="india";
 
 // news detail
-let currentDate = new Date();
-let cDay = currentDate.getDate();
-let cMonth = currentDate.getMonth() + 1;
-let cYear = currentDate.getFullYear();
-const TO_DATE=`${cYear}-${cMonth}-${cDay-1}`;
-const FROM_DATE=`${cYear}-${cMonth}-${cDay}`;
+// let currentDate = new Date();
+// let cDay = currentDate.getDate();
+// let cMonth = currentDate.getMonth() + 1;
+// let cYear = currentDate.getFullYear();
+// const TO_DATE=`${cYear}-${cMonth}-${cDay-1}`;
+// const FROM_DATE=`${cYear}-${cMonth}-${cDay}`;
 
 
 
@@ -365,7 +365,7 @@ function tabClicked(clickedTab)
         sport_drop.classList.remove("active");
 
         
-        CATEGORY="armed forces";
+        CATEGORY="indian army";
         fetchInfo();
 
     }
@@ -569,7 +569,7 @@ function tabClicked(clickedTab)
         // sport_drop.classList.remove("active");
 
         
-        CATEGORY="uttrakhand";
+        CATEGORY="Rajasthan";
         fetchInfo();
 
     }
@@ -636,7 +636,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
 
     try{
-        let response=await fetch(`https://newsapi.org/v2/everything?q=${CATEGORY}&from=${FROM_DATE}&to=${TO_DATE}&sortBy=relevancy&apiKey=${API_KEY}`);
+        let response=await fetch(`https://newsdata.io/api/1/news?apikey=pub_20674f773e9670acd4264c1c15d8f7a149251&q=${CATEGORY}`);
 
 
         let data=await response.json();
@@ -725,24 +725,26 @@ console.log("moj krdi");
 
 console.log("jkjkkkkkkkk");
 
+
 for(let i=0;i<6;i++)
 {
     // console.log("jkjkkkkkkkk");
-    arr[i][0][0].innerText= data?.articles?.[i]?.source?.name;
-    arr[i][1][0].innerText= data?.articles?.[i]?.title;
-    arr[i][2][0].innerText=data?.articles?.[i]?.description;
+    arr[i][0][0].innerText= `${CATEGORY}`;
+    arr[i][1][0].innerText= data?.results?.[i]?.title;
+    arr[i][2][0].innerText=data?.results?.[i]?.description;
     
-    arr[i][4][0].href=data?.articles?.[i]?.url;
+    arr[i][4][0].href=data?.results?.[i]?.link;
     
 
-    if(data?.articles?.[i]?.urlToImage==null)
+    if(data?.results?.[i]?.image_url==null)
 {
+
     
     arr[i][3][0].src="https://th.bing.com/th?id=OIP.O21Q6ByDjlqd7OoD0LWpCwHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2";
 
 }
 else{
-    arr[i][3][0].src=data?.articles?.[i]?.urlToImage;
+    arr[i][3][0].src=data?.results?.[i]?.image_url;
 }
 
    
